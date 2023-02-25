@@ -1,0 +1,24 @@
+vi pod1.yml
+=================================
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod
+spec:
+  containers:
+    - name: c01
+      image: ngnix
+       - containerPort: 80
+
+vi pod2.yml
+=================================
+kind: Pod
+apiVersion: v1
+metadata:
+  name: testpod
+spec:
+  containers:
+    - name: c03
+      image: httpd
+	ports: 
+       - containerPort: 80
